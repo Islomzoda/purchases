@@ -8,7 +8,7 @@ type="text" class="form-control">
     <label for="purchase-input-category"><h3>Категория</h3></label>
     <input id="purchase-input-category" data-id="purchase-input-category"
 type="text" class="form-control">
-    <button type="button" data-action="purchase-add" class = "btn btn-outline-success">Добавить</button>
+    <button type="button" data-action="purchase-add" class = "btn btn-outline-success mt-3">Добавить</button>
 </form>
 <ul data-id="purchases-list"></ul>
 <div data-id="purchases-total">Сумма: 0</div>
@@ -38,9 +38,9 @@ purchaseAddButtonEl.onclick = evt => {
     const purchaseEl = document.createElement('li');
     purchaseEl.innerHTML = `
     Покупка на сумму ${value}, в категории ${category}
-    <button data-action="remove" class="btn btn-outline-danger " >x</button>
-    <button data-action="up" class="btn btn-outline-dark">↑</button>
-    <button data-action="down" class="btn btn-outline-dark">↓</button> 
+    <button data-action="remove" class="btn btn-outline-danger mt-2 " >x</button>
+    <button data-action="up" class="btn btn-outline-dark mt-2">↑</button>
+    <button data-action="down" class="btn btn-outline-dark mt-2">↓</button> 
 
 `;
     
